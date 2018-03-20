@@ -1,0 +1,10 @@
+{
+    "name": "dynamodb-create-table",
+    "version": "1.0.0",
+    "author": "Jayson Nabor",
+    "private": true,
+    "scripts": {
+      "package": "aws cloudformation package --template-file template.yaml --output-template-file serverless.yaml --s3-bucket serverless-app-models",
+      "deploy": "aws cloudformation deploy --template-file serverless.yaml --stack-name dynamodb-create-table"
+    }
+  }

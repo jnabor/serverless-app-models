@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  dynamodbcreatetable:
+    Properties:
+      CodeUri: s3://serverless-app-models/d24b02b15e42a0b3e0f31f1ec266ff5a
+      Description: ''
+      Handler: index.handler
+      MemorySize: 128
+      Role: arn:aws:iam::815621908682:role/dynamodb-demo-full-access
+      Runtime: nodejs6.10
+      Timeout: 3
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
