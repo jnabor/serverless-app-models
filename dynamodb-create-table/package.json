@@ -5,6 +5,10 @@
     "private": true,
     "scripts": {
       "package": "aws cloudformation package --template-file template.yaml --output-template-file serverless.yaml --s3-bucket serverless-app-models",
-      "deploy": "aws cloudformation deploy --template-file serverless.yaml --stack-name dynamodb-create-table"
+      "deploy": "aws cloudformation deploy --template-file serverless.yaml --stack-name dynamodb-create-table",
+      "invoke": "sam local invoke -e event.json dynamodbcreatetable",
+      "init1": "docker-machine env --shell cmd default",
+      "init2": "@FOR /f 'tokens=*' %i IN ('docker-machine env --shell cmd default') DO @%i",
+      "init3": "docker version"
     }
   }

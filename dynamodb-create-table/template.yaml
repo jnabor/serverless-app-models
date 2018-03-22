@@ -10,4 +10,3 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 3
-      Role: 'arn:aws:iam::815621908682:role/dynamodb-demo-full-access'

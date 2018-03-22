@@ -3,7 +3,7 @@ Description: An AWS Serverless Specification template describing your function.
 Resources:
   dynamodbcreatetable:
     Properties:
-      CodeUri: s3://serverless-app-models/d24b02b15e42a0b3e0f31f1ec266ff5a
+      CodeUri: s3://serverless-app-models/da7e3d7e536815422eda65fa7bf93de3
       Description: ''
       Handler: index.handler
       MemorySize: 128
